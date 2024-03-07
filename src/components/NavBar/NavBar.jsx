@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import axios from "axios";
 import { Link, NavLink } from "react-router-dom";
 import navlogo from "../../assets/jellybelly.png"
+import './NavBar.scss'
 
 
 export default function NavBar({ setBeanList }) {
@@ -29,7 +30,7 @@ export default function NavBar({ setBeanList }) {
 
 
     return (
-        <nav>
+        <nav className="navbar">
             {/* <NavLink to="/"><h2>Home</h2></NavLink> */}
             <img src={navlogo} width="200px" height="100px" />
             <h2>Reset</h2>

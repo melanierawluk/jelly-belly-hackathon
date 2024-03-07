@@ -1,0 +1,38 @@
+.bean-details {
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    &__name {
+        text-align: center;
+        color: #e83a4b;
+    }
+
+
+    &__box {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__image {
+        max-width: 40%;
+        height: 95%;
+        margin: auto 0;
+    }
+
+    &__text {
+        line-height: 1.5;
+        color: #e83a4b;
+        border-left: 1px solid #e83a4b;
+        padding: 0 15px 0 15px;
+        margin-bottom: 15px;
+    }
+}

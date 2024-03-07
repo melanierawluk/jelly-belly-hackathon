@@ -1,0 +1,39 @@
+.bean-card {
+    box-sizing: border-box;
+
+    &__card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); // border: 1px solid black;
+        width: 400px;
+        margin: 20px 10px 20px 10px;
+        // background-color: #F5F5F5;
+        text-decoration: none;
+        color: #e83a4b;
+        text-align: center;
+        display: flex;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+        }
+    }
+
+    &__box {
+        background-color: hsl(354, 73%, 65%);
+        color: #FFFFFF;
+        margin-top: 10px;
+        height: 100px;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    &__description {
+        margin: auto 0;
+        padding: 0 15px 0 15px;
+    }
+
+}

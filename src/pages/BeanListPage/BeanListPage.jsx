@@ -1,6 +1,4 @@
-import './BeanListPage';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import './BeanListPage.scss';
 import BeanCard from '../../components/BeanCard/BeanCard';
 
 export default function BeanListPage({ beanList }) {
@@ -11,7 +9,7 @@ export default function BeanListPage({ beanList }) {
     }
 
     return (
-        <div>
+        <div className='bean-list'>
             {beanList.map((bean) => (
                 <BeanCard id={bean.beanId} image={bean.imageUrl} name={bean.flavorName} description={bean.description} />
             ))}
