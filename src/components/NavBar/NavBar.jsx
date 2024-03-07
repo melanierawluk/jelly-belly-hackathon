@@ -25,15 +25,15 @@ export default function NavBar({ setBeanList }) {
             }
         }
         getFilteredBeans();
-    }, [choice])
+    }, [choice,setBeanList])
 
 
 
     return (
         <nav className="navbar">
-            {/* <NavLink to="/"><h2>Home</h2></NavLink> */}
-            <img src={navlogo} width="200px" height="100px" />
-            <h2>Reset</h2>
+            <a href='/'>
+            <img className="logo" src={navlogo}  alt="logo"/>
+            </a>
             <ul>
                 <li onClick={handleClick} id="sugarFree">Sugar Free</li>
                 <li onClick={handleClick} id="glutenFree">Gluten Free</li>

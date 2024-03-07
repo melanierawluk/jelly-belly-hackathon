@@ -1,0 +1,65 @@
+.landing-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 60px 20px;
+  
+}
+.landing-image{
+    width: 50%;
+    img{
+        width: 100%;
+    }
+}
+.landing-text{
+    width: 50%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:#e83a4b;
+    &__title{
+        padding: 0px;
+        font-size: 45px;
+    }
+    &__btn{
+        background-color: #e83a4b;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        width: 60%;
+        padding: 1rem 0rem;
+        align-self: center;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+}
+.recipe{
+    width: 100%;
+    color: #e83a4b;
+    // padding-left: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+justify-content: space-evenly;
+align-items: center;
+    &__today{
+        font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    &__text{
+        width: 50%;
+        padding: 10px;
+    }
+    &__box{
+        width: 50%;
+        padding: 60px;
+    }
+    &__img{
+        width: 100%;
+        max-height: 500px;
+    }
+}
+

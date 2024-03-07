@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './BeanDetailsPage.scss'
 import { useParams } from 'react-router-dom'
 import axios from 'axios';
+import Header from '../../components/Header/Header';
 
 export default function BeanDetailsPage() {
 
@@ -26,12 +27,14 @@ export default function BeanDetailsPage() {
         return <h1>No bean exists!</h1>
     }
     return (
+        <div>
+            <Header/>
         <div key={bean.beanId} className="bean-details__card">
             <div className='bean-details__title'>
                 <h3 className='bean-details__name'>{bean.flavorName}</h3>
             </div>
             <div className='bean-details__box'>
-                <img className='bean-details__image' src={bean.imageUrl} alt="Jelly Belly Image" />
+                <img className='bean-details__image' src={bean.imageUrl} alt="Jelly Belly" />
                 <div className='bean-details__text'>
                     <p className='bean-details__color'><strong>Color:</strong> {bean.colorGroup}</p>
                     <p className='bean-details__description'><strong>Description:</strong> {bean.description}</p>
@@ -39,6 +42,7 @@ export default function BeanDetailsPage() {
                     </p>
                 </div>
             </div>
+        </div>
         </div>
     )
 

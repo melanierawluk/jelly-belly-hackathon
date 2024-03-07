@@ -3,11 +3,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import BeanDetailsPage from './pages/BeanDetailsPage/BeanDetailsPage';
 import BeanListPage from './pages/BeanListPage/BeanListPage';
 import LandingPage from './pages/LandingPage/LandingPage';
-import NavBar from './components/NavBar/NavBar';
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import {RondomRecipe} from './utils/rondom';
+
+
 
 function App() {
+  console.log(RondomRecipe())
 
   const [beanList, setBeanList] = useState("");
 
@@ -27,11 +31,11 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar beanList={beanList} setBeanList={setBeanList} />
+      {/* <NavBar beanList={beanList} setBeanList={setBeanList} /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/beans" element={<BeanListPage beanList={beanList} />} />
+          <Route path="/beans" element={<BeanListPage beanList={beanList} setBeanList={setBeanList}/>} />
           <Route path="/beans/:id" element={<BeanDetailsPage />} />
         </Routes>
       </BrowserRouter>
